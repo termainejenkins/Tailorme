@@ -126,6 +126,35 @@ tailorme/
 - `PUT /api/resumes/:id` - Update resume
 - `DELETE /api/resumes/:id` - Delete resume
 
+## Bug Tracking and Solutions
+
+### Bug Tracking
+We maintain a list of bugs encountered during development along with their solutions. This helps in understanding recurring issues and their resolutions.
+
+| Date       | Bug Description                          | Solution Summary                     | Status   |
+|------------|------------------------------------------|---------------------------------------|----------|
+| YYYY-MM-DD | Brief description of the bug             | Brief description of the solution    | Resolved |
+
+### How to Update
+1. Add a new row for each bug encountered.
+2. Provide a brief description of the bug and its solution.
+3. Update the status to `Resolved` once fixed.
+
+## Development Progress
+
+### Progress Tracking
+We track the progress of development by documenting features added, changes made, and bugs resolved.
+
+| Date       | Type       | Description                              | Status   |
+|------------|------------|------------------------------------------|----------|
+| YYYY-MM-DD | Feature    | Brief description of the feature added  | Complete |
+| YYYY-MM-DD | Change     | Brief description of the change made    | Complete |
+| YYYY-MM-DD | Bug Fix    | Brief description of the bug fixed      | Complete |
+
+### How to Update
+1. Add a new row for each feature, change, or bug fix.
+2. Provide a brief description and update the status accordingly.
+
 ## Contributing
 
 1. Fork the repository
@@ -145,4 +174,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [MongoDB](https://www.mongodb.com/)
 - [Express](https://expressjs.com/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/) 
+- [Tailwind CSS](https://tailwindcss.com/)

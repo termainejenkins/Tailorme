@@ -1,0 +1,48 @@
+{
+  "name": "tailorme",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server",
+    "shared"
+  ],
+  "scripts": {
+    "start": "concurrently \"npm run start:client\" \"npm run start:server\"",
+    "start:client": "npm run start --workspace=client",
+    "start:server": "npm run dev --workspace=server",
+    "dev": "npm run start",
+    "dev:client": "npm run start:client",
+    "dev:server": "npm run start:server",
+    "dev:shared": "npm run watch --workspace=shared",
+    "build": "npm run build --workspaces",
+    "build:client": "npm run build --workspace=client",
+    "build:server": "npm run build --workspace=server",
+    "build:shared": "npm run build --workspace=shared",
+    "test": "npm run test --workspaces",
+    "test:client": "npm run test --workspace=client",
+    "test:server": "npm run test --workspace=server",
+    "test:shared": "npm run test --workspace=shared",
+    "test:watch": "npm run test:watch --workspaces",
+    "lint": "npm run lint --workspaces",
+    "lint:client": "npm run lint --workspace=client",
+    "lint:server": "npm run lint --workspace=server",
+    "lint:shared": "npm run lint --workspace=shared",
+    "lint:fix": "npm run lint:fix --workspaces",
+    "install:all": "npm install && npm run install:shared && npm run install:server && npm run install:client",
+    "install:shared": "npm install --workspace=shared && npm run build --workspace=shared",
+    "install:server": "npm install --workspace=server",
+    "install:client": "npm install --workspace=client",
+    "clean": "npm run clean --workspaces",
+    "clean:client": "npm run clean --workspace=client",
+    "clean:server": "npm run clean --workspace=server",
+    "clean:shared": "npm run clean --workspace=shared",
+    "prod:build": "npm run build && npm run build:server",
+    "prod:start": "npm run start:server",
+    "dev:debug": "concurrently \"npm run dev:client\" \"npm run dev:server:debug\"",
+    "dev:server:debug": "npm run dev:server -- --inspect"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+} 
